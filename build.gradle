@@ -1,0 +1,17 @@
+plugins {
+    id 'application' // Uygulama çalıştırmak için gerekli
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+repositories {
+    mavenCentral() // Maven Central'dan bağımlılıkları çeker
+}
+
+application {
+    mainClassName = 'com.cinejava.Main'
+}
+
+javafx {
+    version = "21"
+    modules = [ 'javafx.controls' ]
+}
