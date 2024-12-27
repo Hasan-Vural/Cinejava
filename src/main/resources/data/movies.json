@@ -1,12 +1,1 @@
-{
-    "id": 1,
-    "name": "Movie 1",
-    "synopsis": "A film that tells the emotional and action-packed journey of a group of people during a difficult journey.",
-    "genres": [
-        "Drama",
-        "Action"
-    ],
-    "duration": 120,
-    "imdbRating": 8.5,
-    "image": "sampleImage.jpg"
-}
+[{"id":1,"name":"Movie 1","synopsis":"A film that tells the emotional and action-packed journey of a group of people during a difficult journey.","genres":["Drama","Action"],"duration":120,"imdbRating":8.5,"image":"sampleImage.jpg"},{"id":1,"name":"Movie 2","synopsis":"synopsis2","genres":["genre1","genre2"],"duration":130,"imdbRating":9.1,"image":"sampleImage2.jpg"},{"id":3755672106129300556,"name":"Inception","synopsis":"A skilled thief leads a team into people's dreams to steal secrets.","genres":["Sci-Fi","Action","Thriller"],"duration":148,"imdbRating":8.8,"image":"inception.jpg"}]

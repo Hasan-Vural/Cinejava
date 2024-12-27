@@ -1,5 +1,9 @@
 package com.cinejava;
 
+import java.util.Arrays;
+import com.cinejava.models.Movie;
+import com.cinejava.services.MoviesService;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
