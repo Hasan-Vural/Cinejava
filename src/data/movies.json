@@ -1,0 +1,12 @@
+{
+    "id": 1,
+    "name": "Movie 1",
+    "synopsis": "A film that tells the emotional and action-packed journey of a group of people during a difficult journey.",
+    "genres": [
+        "Drama",
+        "Action"
+    ],
+    "duration": 120,
+    "imdbRating": 8.5,
+    "image": "sampleImage.jpg"
+}
