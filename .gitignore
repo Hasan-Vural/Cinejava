@@ -1,6 +1,8 @@
 # Derleme çıktıları
 /bin/
 /target/
+/out/
+/build/
 
 # IntelliJ IDEA dosyaları
 *.iml
@@ -17,6 +19,7 @@ Thumbs.db
 # Maven ve Gradle derleme dosyaları
 /.mvn/
 /.gradle/
+gradle/wrapper/
 /build/
 
 # Log dosyaları
@@ -35,3 +38,10 @@ Thumbs.db
 
 # JavaFX için gereksiz dosyalar
 *.fxml.cache
+
+# Geçici dosyalar
+*.tmp
+*.bak
+
+# Diğer
+*.lock
