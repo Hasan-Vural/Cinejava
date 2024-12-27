@@ -1,0 +1,37 @@
+# Derleme çıktıları
+/bin/
+/target/
+
+# IntelliJ IDEA dosyaları
+*.iml
+.idea/
+
+# VSCode dosyaları
+.vscode/
+*.code-workspace
+
+# İşletim Sistemi dosyaları
+.DS_Store
+Thumbs.db
+
+# Maven ve Gradle derleme dosyaları
+/.mvn/
+/.gradle/
+/build/
+
+# Log dosyaları
+*.log
+
+# Ayarlar
+*.class
+*.jar
+*.war
+*.ear
+
+# Kullanıcı ayarları
+*.env
+*.settings
+*.prefs
+
+# JavaFX için gereksiz dosyalar
+*.fxml.cache
