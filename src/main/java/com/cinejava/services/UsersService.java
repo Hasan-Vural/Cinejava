@@ -31,7 +31,7 @@ public class UsersService extends GenericService<User> {
         try {
             validateRegisterRequest(userName, password);
     
-            User newUser = new User(userName, CryptographyHelper.encrypt(password), UserRole.NormalUser);
+            User newUser = new User(userName, CryptographyHelper.encrypt(password), UserRole.USER);
 
             dataStoreContext.insert(newUser);
 

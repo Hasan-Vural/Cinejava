@@ -1,0 +1,14 @@
+[
+    {
+      "id": 1,
+      "sessionDate": "2024-12-30",
+      "startTime": "14:00",
+      "endTime": "16:30"
+    },
+    {
+      "id": 2,
+      "sessionDate": "2024-12-31",
+      "startTime": "18:00",
+      "endTime": "20:30"
+    }
+]

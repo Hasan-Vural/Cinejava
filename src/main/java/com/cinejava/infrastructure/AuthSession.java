@@ -5,7 +5,7 @@ import com.cinejava.models.User;
 public class AuthSession {
     private static AuthSession instance;
 
-    private User loggedInUser; // Giriş yapan kullanıcı bilgisi
+    private User loggedInUser;
 
     private AuthSession() {}
 
