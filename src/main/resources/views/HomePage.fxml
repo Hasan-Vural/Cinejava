@@ -8,14 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.cinejava.controllers.HomePageController">
-    <children>
-        <Label text="Welcome to Homepage!" layoutX="50" layoutY="50" />
-        <Button text="Go to Second Page" layoutX="50" layoutY="100" onAction="#goToSecondPage"/>
-    </children>
-</AnchorPane>
 
-<!--
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml" fx:controller="com.cinejava.controllers.HomePageController">
    <top>
       <HBox prefHeight="5.0" prefWidth="600.0" BorderPane.alignment="CENTER">
@@ -31,9 +24,13 @@
       </HBox>
    </top>
    <center>
-      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" fx:id="movieSlider">
+      </HBox>
+   </center>
+</BorderPane>
+
+<!--
          <children>
-            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateY="150.0" />
             <VBox prefHeight="350.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="300.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
@@ -46,9 +43,5 @@
                   <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Button" />
                </children>
             </VBox>
-            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateX="100.0" translateY="150.0" />
          </children>
-      </HBox>
-   </center>
-</BorderPane>
 -->

@@ -18,5 +18,65 @@
       "imdbRating": 9.0,
       "ticketPrice": 60,
       "image": "dark_knight.jpg"
+    },
+    {
+      "id": 2,
+      "name": "The Dark Knight",
+      "synopsis": "Batman faces the Joker, a criminal mastermind.",
+      "genres": ["Action", "Crime", "Drama"],
+      "duration": 152,
+      "imdbRating": 9.0,
+      "ticketPrice": 60,
+      "image": "dark_knight.jpg"
+    },
+    {
+      "id": 2,
+      "name": "The Dark Knight",
+      "synopsis": "Batman faces the Joker, a criminal mastermind.",
+      "genres": ["Action", "Crime", "Drama"],
+      "duration": 152,
+      "imdbRating": 9.0,
+      "ticketPrice": 60,
+      "image": "dark_knight.jpg"
+    },
+    {
+      "id": 2,
+      "name": "The Dark Knight",
+      "synopsis": "Batman faces the Joker, a criminal mastermind.",
+      "genres": ["Action", "Crime", "Drama"],
+      "duration": 152,
+      "imdbRating": 9.0,
+      "ticketPrice": 60,
+      "image": "dark_knight.jpg"
+    },
+    {
+      "id": 2,
+      "name": "The Dark Knight",
+      "synopsis": "Batman faces the Joker, a criminal mastermind.",
+      "genres": ["Action", "Crime", "Drama"],
+      "duration": 152,
+      "imdbRating": 9.0,
+      "ticketPrice": 60,
+      "image": "dark_knight.jpg"
+    },
+    {
+      "id": 2,
+      "name": "The Dark Knight",
+      "synopsis": "Batman faces the Joker, a criminal mastermind.",
+      "genres": ["Action", "Crime", "Drama"],
+      "duration": 152,
+      "imdbRating": 9.0,
+      "ticketPrice": 60,
+      "image": "dark_knight.jpg"
+    },
+    {
+      "id": 2,
+      "name": "The Dark Knight",
+      "synopsis": "Batman faces the Joker, a criminal mastermind.",
+      "genres": ["Action", "Crime", "Drama"],
+      "duration": 152,
+      "imdbRating": 9.0,
+      "ticketPrice": 60,
+      "image": "dark_knight.jpg"
     }
 ]

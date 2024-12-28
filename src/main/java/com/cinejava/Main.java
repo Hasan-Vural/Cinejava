@@ -20,7 +20,7 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader(url);
         Parent mainCallWindowFXML = loader.load();
 
-        scene = new Scene (mainCallWindowFXML, 800, 600);
+        scene = new Scene (mainCallWindowFXML, 1300, 700);
         primaryStage.setScene(scene);
         primaryStage.show(); 
     }
