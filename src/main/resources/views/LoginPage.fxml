@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Alert?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
 
+<?import javafx.scene.text.Text?>
+<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.LoginController">
+    <VBox spacing="30" alignment="CENTER" style="-fx-background-color: #f0f0f0; -fx-padding: 50;">
+        <!-- Başlık -->
+        <HBox alignment="CENTER">
+            <Text fx:id="title" text="Hoş Geldiniz!" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+        </HBox>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <top>
-      <MenuBar prefHeight="43.0" prefWidth="900.0" BorderPane.alignment="CENTER" />
-   </top>
-</BorderPane>
+        <!-- Kullanıcı adı ve şifre alanları -->
+        <TextField fx:id="usernameField" promptText="Kullanıcı Adı" style="-fx-font-size: 14px; -fx-padding: 10px; -fx-min-width: 300px; -fx-max-width: 400px;" />
+        <PasswordField fx:id="passwordField" promptText="Şifre" style="-fx-font-size: 14px; -fx-padding: 10px; -fx-min-width: 300px; -fx-max-width: 400px;" />
+
+        <!-- Giriş ve Kayıt butonları -->
+        <HBox spacing="20" alignment="CENTER">
+            <Button text="Giriş Yap" fx:id="loginButton" onAction="#onLoginButtonClick" style="-fx-padding: 10px 20px; -fx-font-size: 14px;" />
+            <Button text="Kayıt Ol" onAction="#onSignUpButtonClick" style="-fx-padding: 10px 20px; -fx-font-size: 14px;" />
+        </HBox>
+    </VBox>
+</StackPane>
