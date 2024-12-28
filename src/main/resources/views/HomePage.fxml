@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
 
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.cinejava.controllers.HomePageController">
+    <children>
+        <Label text="Welcome to Homepage!" layoutX="50" layoutY="50" />
+        <Button text="Go to Second Page" layoutX="50" layoutY="100" onAction="#goToSecondPage"/>
+    </children>
+</AnchorPane>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<!--
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml" fx:controller="com.cinejava.controllers.HomePageController">
    <top>
       <HBox prefHeight="5.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -44,3 +51,4 @@
       </HBox>
    </center>
 </BorderPane>
+-->

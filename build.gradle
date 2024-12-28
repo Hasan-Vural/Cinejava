@@ -1,13 +1,16 @@
 plugins {
-    id 'application' // Uygulama çalıştırmak için gerekli
+    id 'application'
     id 'org.openjfx.javafxplugin' version '0.1.0'
 }
 
 repositories {
-    mavenCentral() // Maven Central'dan bağımlılıkları çeker
+    mavenCentral()
 }
 
 dependencies {
+    implementation "org.openjfx:javafx-controls:21"
+    implementation "org.openjfx:javafx-fxml:21"
+
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
     implementation 'com.fasterxml.jackson.core:jackson-core:2.15.2'
     implementation 'com.fasterxml.jackson.core:jackson-annotations:2.15.2'
@@ -15,9 +18,10 @@ dependencies {
 
 application {
     mainClassName = 'com.cinejava.Main'
+    mainClass = 'com.cinejava.Main'
 }
 
 javafx {
     version = "21"
-    modules = [ 'javafx.controls' ]
+    modules = ['javafx.controls', 'javafx.fxml']
 }
