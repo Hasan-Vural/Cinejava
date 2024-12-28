@@ -1,6 +1,8 @@
 package com.cinejava.services.interfaces;
 
-public interface IUsersService {
+import com.cinejava.models.User;
+
+public interface IUsersService extends IGenericService<User> {
     boolean login(String userName, String password);
     String register(String userName, String password);
 }
