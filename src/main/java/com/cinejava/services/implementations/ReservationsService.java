@@ -1,4 +1,4 @@
-package com.cinejava.services;
+package com.cinejava.services.implementations;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,30 +6,35 @@ import java.util.stream.Collectors;
 
 import com.cinejava.constants.DataStoreConstants;
 import com.cinejava.models.Reservation;
+import com.cinejava.services.interfaces.IReservationsService;
 
-public class ReservationsService extends GenericService<Reservation> {
+public class ReservationsService extends GenericService<Reservation> implements IReservationsService {
     public ReservationsService() {
         super(Reservation.class, DataStoreConstants.RESERVATION_STORE_NAME);
     }
 
+    @Override
     public List<Reservation> getReservationsByUserId(long userId) {
         return getAll().stream()
             .filter(reservation -> reservation.getUserId() == userId)
             .collect(Collectors.toList());
     }
 
+    @Override
     public List<Reservation> getReservationsByMovieId(long movieId) {
         return getAll().stream()
             .filter(reservation -> reservation.getMovieId() == movieId)
             .collect(Collectors.toList());
     }
 
+    @Override
     public List<Reservation> getReservationsBySessionId(long sessionId) {
         return getAll().stream()
             .filter(reservation -> reservation.getSessionId() == sessionId)
             .collect(Collectors.toList());
     }
 
+    @Override
     public Reservation createReservation(long userId, long movieId, long sessionId, List<Integer> seats) {
         if (seats == null || seats.isEmpty() || seats.stream().anyMatch(x -> x <= 0 || x > 100)) {
             throw new IllegalArgumentException("Reserved seats cannot be null, empty, or invalid");
@@ -49,7 +54,8 @@ public class ReservationsService extends GenericService<Reservation> {
         dataStoreContext.insert(newReservation);
         return newReservation;
     }
-            
+    
+    @Override        
     public Reservation mergeReservations(Reservation baseReservation, Reservation newReservation) {
         List<Integer> combinedSeats = baseReservation.getReservedSeats();
         combinedSeats.addAll(newReservation.getReservedSeats());
@@ -58,6 +64,7 @@ public class ReservationsService extends GenericService<Reservation> {
         return baseReservation;
     }
 
+    @Override
     public boolean cancelReservation(long reservationId) {
         Optional<Reservation> reservation = get(reservationId);
         if (reservation.isPresent()) {

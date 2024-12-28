@@ -1,4 +1,4 @@
-package com.cinejava.services;
+package com.cinejava.services.implementations;
 
 import com.cinejava.constants.DataStoreConstants;
 import com.cinejava.models.Session;

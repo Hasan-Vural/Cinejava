@@ -1,4 +1,4 @@
-package com.cinejava.services;
+package com.cinejava.services.implementations;
 
 import java.util.Optional;
 
@@ -8,12 +8,14 @@ import com.cinejava.enums.UserRole;
 import com.cinejava.exceptions.RegisterException;
 import com.cinejava.infrastructure.AuthSession;
 import com.cinejava.models.User;
+import com.cinejava.services.interfaces.IUsersService;
 
-public class UsersService extends GenericService<User> {
+public class UsersService extends GenericService<User> implements IUsersService{
     public UsersService() {
         super(User.class, DataStoreConstants.USER_STORE_NAME);
     }
 
+    @Override
     public boolean login(String userName, String password)
     {
         Optional<User> signingUser = findUserByCredentials(userName, password);
@@ -26,6 +28,7 @@ public class UsersService extends GenericService<User> {
         return true;
     }
 
+    @Override
     public String register(String userName, String password)
     {
         try {
