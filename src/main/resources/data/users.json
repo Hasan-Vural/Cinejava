@@ -1,4 +1,5 @@
 [
+<<<<<<< Updated upstream
   {
     "id": 2076928253462220387,
     "username": "testt",
@@ -18,3 +19,22 @@
     "role": "USER"
   }
 ]
+=======
+    {
+        "id": 1,
+        "FirstName": "John",
+        "LastName": "Doe",
+        "username": "admin",
+        "password": "admin",
+        "role": "ADMIN"
+    },
+    {
+        "id": 2,
+        "FirstName": "Johnny",
+        "LastName": "Doe",
+        "username": "johnny_doe",
+        "password": "hashedPassword123",
+        "role": "USER"
+    }
+]
+>>>>>>> Stashed changes

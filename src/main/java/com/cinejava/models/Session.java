@@ -5,6 +5,8 @@ import java.time.LocalTime;
 
 import com.cinejava.common.BaseModel;
 
+// İnternetten Jackson kütüphanesi ile kontrol edildi düzgün formata geitirldi jSon için 
+
 public class Session extends BaseModel {
     private LocalDate sessionDate;
     private LocalTime startTime;

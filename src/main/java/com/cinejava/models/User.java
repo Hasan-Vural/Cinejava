@@ -3,6 +3,9 @@ package com.cinejava.models;
 import com.cinejava.common.BaseModel;
 import com.cinejava.enums.UserRole;
 
+// İnternetten Jackson kütüphanesi ile kontrol edildi düzgün formata geitirldi jSon için 
+
+
 public class User extends BaseModel {
     private String username;
     private String password;

@@ -4,6 +4,8 @@ import java.util.List;
 
 import com.cinejava.common.BaseModel;
 
+// İnternetten Jackson kütüphanesi ile kontrol edildi düzgün formata geitirldi jSon için 
+
 public class Reservation extends BaseModel {
     private long movieId;
     private long userId;

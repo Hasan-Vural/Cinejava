@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: #002929;">
+         <children>
+            <Pane layoutX="104.0" prefHeight="32.0" prefWidth="1078.0" style="-fx-background-color: #005c5c;">
+               <children>
+                  <AnchorPane prefHeight="32.0" prefWidth="1078.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERDE">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="277.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERDE">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="981.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERDE">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="801.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERDE">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="503.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERDE">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+            <Pane layoutX="104.0" layoutY="100.0" prefHeight="600.0" prefWidth="1078.0" style="-fx-background-color: #5b5a5e;">
+               <children>
+                  <AnchorPane prefHeight="603.0" prefWidth="1078.0">
+                     <children>
+                        <Pane layoutX="50.0" layoutY="50.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat1" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat1clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="150.0" layoutY="50.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat2" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat2clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="250.0" layoutY="50.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat3" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat3clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="350.0" layoutY="50.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat4" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat4clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="450.0" layoutY="50.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat5" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat5clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="550.0" layoutY="50.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat6" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat6clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="800.0" layoutY="50.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat7" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat7clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="900.0" layoutY="50.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat8" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat8clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="50.0" layoutY="250.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat17" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat17clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="150.0" layoutY="250.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat18" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat18clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="250.0" layoutY="250.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat19" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat19clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="350.0" layoutY="250.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat20" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat20clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="450.0" layoutY="250.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat21" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat21clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="550.0" layoutY="250.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat22" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat22clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="800.0" layoutY="250.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat23" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat23clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="900.0" layoutY="250.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat24" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat24clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="50.0" layoutY="350.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat25" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat25clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="150.0" layoutY="350.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat26" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat26clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="250.0" layoutY="350.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat27" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat27clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="350.0" layoutY="350.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat28" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat28clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="450.0" layoutY="350.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat29" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat29clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="550.0" layoutY="350.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat30" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat30clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="800.0" layoutY="350.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat31" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat31clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="900.0" layoutY="350.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat32" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat32clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="50.0" layoutY="150.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat9" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat9clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="150.0" layoutY="150.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat10" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat10clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="250.0" layoutY="150.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat11" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat11clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="350.0" layoutY="150.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat12" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat12clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="450.0" layoutY="150.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat13" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat13clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="550.0" layoutY="150.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat14" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat14clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="800.0" layoutY="150.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat15" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat15clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="900.0" layoutY="150.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="seat16" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#seat16clicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/whiteseat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="80.0" layoutY="520.0" prefHeight="50.0" prefWidth="300.0">
+                           <children>
+                              <Text fx:id="seatchoices" fill="WHITE" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Koltuk Seçiminiz:">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="400.0" layoutY="520.0" prefHeight="50.0" prefWidth="300.0">
+                           <children>
+                              <Text fx:id="totalprice" fill="WHITE" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toplam Fiyat">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="800.0" layoutY="500.0" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #32a852; -fx-border-color: black; -fx-border-radius: 5; -fx-background-insets: 2;">
+                           <children>
+                              <JFXButton fx:id="reservation" layoutX="1.0" layoutY="-2.0" onMouseClicked="#reservationclicked" text="Rezervasyon yap" textFill="WHITE">
+                                 <font>
+                                    <Font name="UniSans-Bold" size="30.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+            <Pane layoutX="1237.0" layoutY="41.0" prefHeight="86.0" prefWidth="63.0" style="-fx-background-color: #005c5c;">
+               <children>
+                  <Text fill="WHITE" layoutX="23.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GİRİŞ" wrappingWidth="17.15087890625">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

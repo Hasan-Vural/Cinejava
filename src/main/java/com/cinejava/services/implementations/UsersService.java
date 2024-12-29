@@ -79,10 +79,3 @@ public class UsersService extends GenericService<User> implements IUsersService{
         }
     }
 }
-
-
-//  USer Kontrol et
-
-//user update
-
-// userdelete

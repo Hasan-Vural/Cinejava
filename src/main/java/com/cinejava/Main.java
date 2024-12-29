@@ -4,6 +4,8 @@ import javafx.fxml.FXMLLoader;
 
 import java.net.URL;
 
+import javax.imageio.ImageIO;
+
 import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -19,8 +21,16 @@ public class Main extends Application {
 
         FXMLLoader loader = new FXMLLoader(url);
         Parent mainCallWindowFXML = loader.load();
+<<<<<<< Updated upstream
 
         scene = new Scene (mainCallWindowFXML, 1300, 700);
+=======
+        
+        Image icon = new Image("main/resources/images/icon.png");
+        primaryStage.getIcons().add(icon);
+        scene = new Scene (mainCallWindowFXML, 1300, 700);
+        scene.getStylesheets().add(getClass().getResource("main/resources/css/styles.css").toExternalForm());
+>>>>>>> Stashed changes
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.setTitle("CineJava");
@@ -32,8 +42,8 @@ public class Main extends Application {
             URL url = Main.class.getClassLoader().getResource(fxmlPath.concat(fxmlFile));
             FXMLLoader loader = new FXMLLoader(url);
             Parent root = loader.load();
-    
-            scene.setRoot(root);
+            
+            scene.setRoot(root, 1300, 700, bgColor="#213555");
         }
 
         catch (Exception e) {

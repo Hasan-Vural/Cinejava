@@ -36,7 +36,7 @@ public class ReservationsService extends GenericService<Reservation> implements 
 
     @Override
     public Reservation createReservation(long userId, long movieId, long sessionId, List<Integer> seats) {
-        if (seats == null || seats.isEmpty() || seats.stream().anyMatch(x -> x <= 0 || x > 100)) {
+        if (seats == null || seats.isEmpty() || seats.stream().anyMatch(x -> x <= 0 || x > 40)) {
             throw new IllegalArgumentException("Reserved seats cannot be null, empty, or invalid");
         }
     

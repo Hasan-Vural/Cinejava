@@ -5,6 +5,8 @@ import java.util.List;
 import com.cinejava.common.BaseModel;
 import com.cinejava.constants.DataStoreConstants;
 
+// İnternetten Jackson kütüphanesi ile kontrol edildi düzgün formata geitirldi jSon için 
+
 public class Movie extends BaseModel {
     private String name;
     private String synopsis;

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: #1d3557; -fx-border-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MoviePageController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="387.0">
+         <children>
+            <Pane layoutX="61.0" layoutY="85.0" prefHeight="265.0" prefWidth="265.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 5;">
+               <children>
+                  <ImageView fx:id="image" fitHeight="260.0" fitWidth="260.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Python/proje/movies/images/covers/Alaaddin-cover.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <VBox layoutX="59.0" layoutY="380.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="293.0" prefWidth="265.0" style="-fx-background-color: #27436B;">
+               <children>
+                  <AnchorPane prefHeight="299.0" prefWidth="265.0">
+                     <children>
+                        <Text fx:id="movieName" layoutX="2.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie Name">
+                           <font>
+                              <Font name="Berlin Sans FB" size="36.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="category" layoutX="2.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category">
+                           <font>
+                              <Font name="Berlin Sans FB" size="36.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="description" layoutX="14.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="klgklzklgkaşbg">
+                           <font>
+                              <Font name="UniSans-Light" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="rating" layoutX="2.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puan">
+                           <font>
+                              <Font name="Berlin Sans FB" size="36.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="430.0" layoutY="30.0" prefHeight="50.0" prefWidth="810.0" style="-fx-background-color: #00A8A8;">
+         <children>
+            <JFXButton fx:id="jan1" layoutX="30.0" layoutY="8.0" onMouseClicked="#jan1clicked" text="1 Ocak" textFill="WHITE">
+               <font>
+                  <Font name="UniSans-Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="jan2" layoutX="140.0" layoutY="8.0" onMouseClicked="#jan2clicked" text="2 Ocak" textFill="WHITE">
+               <font>
+                  <Font name="UniSans-Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="jan3" layoutX="250.0" layoutY="8.0" onMouseClicked="#jan3clicked" text="3 Ocak" textFill="WHITE">
+               <font>
+                  <Font name="UniSans-Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="jan4" layoutX="360.0" layoutY="8.0" onMouseClicked="#jan4clicked" text="4 Ocak" textFill="WHITE">
+               <font>
+                  <Font name="UniSans-Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="jan5" layoutX="470.0" layoutY="8.0" onMouseClicked="#jan5clicked" text="5 Ocak" textFill="WHITE">
+               <font>
+                  <Font name="UniSans-Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="jan6" layoutX="580.0" layoutY="8.0" onMouseClicked="#jan6clicked" text="6 Ocak" textFill="WHITE">
+               <font>
+                  <Font name="UniSans-Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="jan7" layoutX="690.0" layoutY="8.0" onMouseClicked="#jan7clicked" text="7 Ocak" textFill="WHITE">
+               <font>
+                  <Font name="UniSans-Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="430.0" layoutY="100.0" prefHeight="570.0" prefWidth="810.0" style="-fx-background-color: #00A8A8; -fx-border-radius: 10;">
+         <children>
+            <AnchorPane prefHeight="570.0" prefWidth="810.0">
+               <children>
+                  <Pane layoutX="30.0" layoutY="14.0" prefHeight="70.0" prefWidth="750.0" style="-fx-background-color: #007575;">
+                     <children>
+                        <AnchorPane prefHeight="70.0" prefWidth="750.0">
+                           <children>
+                              <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12:00">
+                                 <font>
+                                    <Font size="43.0" />
+                                 </font>
+                              </Text>
+                              <Pane layoutX="605.0" layoutY="3.0" prefHeight="64.0" prefWidth="137.0" style="-fx-background-color: #00A8A8; -fx-border-color: #007575;">
+                                 <children>
+                                    <JFXButton fx:id="biletal1" layoutY="4.0" onMouseClicked="#biletal1clicked" text="Bilet Al" textFill="WHITE">
+                                       <font>
+                                          <Font name="UniSans-Bold" size="31.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="30.0" layoutY="120.0" prefHeight="70.0" prefWidth="750.0" style="-fx-background-color: #007575;">
+                     <children>
+                        <AnchorPane prefHeight="70.0" prefWidth="750.0">
+                           <children>
+                              <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14:30">
+                                 <font>
+                                    <Font size="43.0" />
+                                 </font>
+                              </Text>
+                              <Pane layoutX="605.0" layoutY="3.0" prefHeight="64.0" prefWidth="137.0" style="-fx-background-color: #00A8A8; -fx-border-color: #007575;">
+                                 <children>
+                                    <JFXButton fx:id="biletal2" layoutY="4.0" onMouseClicked="#biletal2clicked" text="Bilet Al" textFill="WHITE">
+                                       <font>
+                                          <Font name="UniSans-Bold" size="31.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="30.0" layoutY="232.0" prefHeight="70.0" prefWidth="750.0" style="-fx-background-color: #007575;">
+                     <children>
+                        <AnchorPane prefHeight="70.0" prefWidth="750.0">
+                           <children>
+                              <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17:00">
+                                 <font>
+                                    <Font size="43.0" />
+                                 </font>
+                              </Text>
+                              <Pane layoutX="605.0" layoutY="3.0" prefHeight="64.0" prefWidth="137.0" style="-fx-background-color: #00A8A8; -fx-border-color: #007575;">
+                                 <children>
+                                    <JFXButton fx:id="biletal3" layoutY="4.0" onMouseClicked="#biletal3clicked" text="Bilet Al" textFill="WHITE">
+                                       <font>
+                                          <Font name="UniSans-Bold" size="31.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="30.0" layoutY="348.0" prefHeight="70.0" prefWidth="750.0" style="-fx-background-color: #007575;">
+                     <children>
+                        <AnchorPane prefHeight="70.0" prefWidth="750.0">
+                           <children>
+                              <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="19:30">
+                                 <font>
+                                    <Font size="43.0" />
+                                 </font>
+                              </Text>
+                              <Pane layoutX="605.0" layoutY="3.0" prefHeight="64.0" prefWidth="137.0" style="-fx-background-color: #00A8A8; -fx-border-color: #007575;">
+                                 <children>
+                                    <JFXButton fx:id="biletal4" layoutY="4.0" onMouseClicked="#biletal4clicked" text="Bilet Al" textFill="WHITE">
+                                       <font>
+                                          <Font name="UniSans-Bold" size="31.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="30.0" layoutY="457.0" prefHeight="70.0" prefWidth="750.0" style="-fx-background-color: #007575;">
+                     <children>
+                        <AnchorPane prefHeight="70.0" prefWidth="750.0">
+                           <children>
+                              <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21:00">
+                                 <font>
+                                    <Font size="43.0" />
+                                 </font>
+                              </Text>
+                              <Pane layoutX="605.0" layoutY="3.0" prefHeight="64.0" prefWidth="137.0" style="-fx-background-color: #00A8A8; -fx-border-color: #007575;">
+                                 <children>
+                                    <JFXButton fx:id="biletal5" layoutY="4.0" onMouseClicked="#biletal5clicked" text="Bilet Al" textFill="WHITE">
+                                       <font>
+                                          <Font name="UniSans-Bold" size="31.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</Pane>
