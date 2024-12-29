@@ -15,13 +15,15 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        URL url = getClass().getClassLoader().getResource(fxmlPath.concat("HomePage.fxml"));
+        URL url = getClass().getClassLoader().getResource(fxmlPath.concat("LoginPage.fxml"));
 
         FXMLLoader loader = new FXMLLoader(url);
         Parent mainCallWindowFXML = loader.load();
 
         scene = new Scene (mainCallWindowFXML, 1300, 700);
         primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
+        primaryStage.setTitle("CineJava");
         primaryStage.show(); 
     }
 

@@ -17,6 +17,9 @@ public class Reservation extends BaseModel {
         this.reservedSeats = reservedSeats;
     }
 
+    public Reservation() {
+    }
+
     public long getMovieId() {
         return movieId;
     }

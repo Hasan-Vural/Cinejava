@@ -16,6 +16,9 @@ public class Session extends BaseModel {
         this.endTime = endTime;
     }
 
+    public Session() {
+    }
+
     public LocalDate getSessionDate() {
         return sessionDate;
     }

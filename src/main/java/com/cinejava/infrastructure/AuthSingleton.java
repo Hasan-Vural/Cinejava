@@ -2,16 +2,16 @@ package com.cinejava.infrastructure;
 
 import com.cinejava.models.User;
 
-public class AuthSession {
-    private static AuthSession instance;
+public class AuthSingleton {
+    private static AuthSingleton instance;
 
     private User loggedInUser;
 
-    private AuthSession() {}
+    private AuthSingleton() {}
 
-    public static AuthSession getInstance() {
+    public static AuthSingleton getInstance() {
         if (instance == null) {
-            instance = new AuthSession();
+            instance = new AuthSingleton();
         }
         return instance;
     }

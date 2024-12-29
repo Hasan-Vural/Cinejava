@@ -20,6 +20,11 @@ public class GenericService<T extends BaseModel> implements IGenericService<T> {
     }
 
     @Override
+    public T getByIndex(int index) {
+        return dataStoreContext.getByIndex(index);
+    }
+
+    @Override
     public List<T> getAll() {
         return dataStoreContext.getAll();
     }

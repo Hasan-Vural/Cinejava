@@ -1,14 +1,1 @@
-[
-    {
-        "id": 1,
-        "username": "admin",
-        "password": "admin",
-        "role": "ADMIN"
-    },
-    {
-        "id": 2,
-        "username": "johnny_doe",
-        "password": "hashedPassword123",
-        "role": "USER"
-    }
-]
+[{"id":2076928253462220387,"username":"testt","password":"0WhKeJsiN1i+K8iK9H1GFQ==","role":"USER"},{"id":5801662690468911405,"username":"test","password":"bbFE/AM5S9BO0vikV0r8iA==","role":"USER"},{"id":7714835765252466302,"username":"asdasdasd","password":"tnYateJzfKdDOx5JNIbfcQ==","role":"USER"}]

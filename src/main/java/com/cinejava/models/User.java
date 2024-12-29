@@ -14,6 +14,9 @@ public class User extends BaseModel {
         this.role = role;
     }
 
+    public User() {
+    }
+
     public String getUsername() {
         return username;
     }

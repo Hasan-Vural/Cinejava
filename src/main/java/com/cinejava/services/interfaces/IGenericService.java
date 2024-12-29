@@ -7,6 +7,7 @@ import com.cinejava.common.BaseModel;
 
 public interface IGenericService<T extends BaseModel> {
     Optional<T> get(long id);
+    T getByIndex(int index);
     List<T> getAll();
     boolean insert(T item);
     boolean update(long id, T item);
