@@ -29,7 +29,7 @@ public class DataStoreContext<T extends BaseModel> {
     }
 
     public Optional<T> get(long id) {
-        return items.stream().filter(x -> x.id == id).findFirst();
+        return items.stream().filter(x -> x.getId() == id).findFirst();
     }
 
     public T get(int index) {
@@ -44,7 +44,7 @@ public class DataStoreContext<T extends BaseModel> {
     }
 
     public boolean insert(T item) {
-        item.id = ThreadLocalRandom.current().nextLong(1, Long.MAX_VALUE);
+        item.setId(ThreadLocalRandom.current().nextLong(1, Long.MAX_VALUE));
         items.add(item);
 
         return trySaveToFile();

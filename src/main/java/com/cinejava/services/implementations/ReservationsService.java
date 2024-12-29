@@ -16,30 +16,30 @@ public class ReservationsService extends GenericService<Reservation> implements 
     @Override
     public List<Reservation> getReservationsByUserId(long userId) {
         return getAll().stream()
-            .filter(reservation -> reservation.getUserId() == userId)
-            .collect(Collectors.toList());
+                .filter(reservation -> reservation.getUserId() == userId)
+                .collect(Collectors.toList());
     }
 
     @Override
     public List<Reservation> getReservationsByMovieId(long movieId) {
         return getAll().stream()
-            .filter(reservation -> reservation.getMovieId() == movieId)
-            .collect(Collectors.toList());
+                .filter(reservation -> reservation.getMovieId() == movieId)
+                .collect(Collectors.toList());
     }
 
     @Override
     public List<Reservation> getReservationsBySessionId(long sessionId) {
         return getAll().stream()
-            .filter(reservation -> reservation.getSessionId() == sessionId)
-            .collect(Collectors.toList());
+                .filter(reservation -> reservation.getSessionId() == sessionId)
+                .collect(Collectors.toList());
     }
 
     @Override
     public List<Integer> getReservedSeats(long movieId, long sessionId) {
         return getAll().stream()
-            .filter(reservation -> reservation.getSessionId() == sessionId && reservation.getMovieId() == movieId)
-            .flatMap(reservation -> reservation.getReservedSeats().stream()) // List<Integer> to Stream<Integer>
-            .collect(Collectors.toList()); // Stream<Integer> to List<Integer>
+                .filter(reservation -> reservation.getSessionId() == sessionId && reservation.getMovieId() == movieId)
+                .flatMap(reservation -> reservation.getReservedSeats().stream()) // List<Integer> to Stream<Integer>
+                .collect(Collectors.toList()); // Stream<Integer> to List<Integer>
     }
 
     @Override
@@ -47,28 +47,28 @@ public class ReservationsService extends GenericService<Reservation> implements 
         if (seats == null || seats.isEmpty() || seats.stream().anyMatch(x -> x <= 0 || x > 40)) {
             throw new IllegalArgumentException("Reserved seats cannot be null, empty, or invalid");
         }
-    
+
         Optional<Reservation> existingReservation = dataStoreContext.getAll().stream()
-            .filter(reservation -> isMatchingReservation(reservation, userId, movieId, sessionId))
-            .findFirst();
-    
+                .filter(reservation -> isMatchingReservation(reservation, userId, movieId, sessionId))
+                .findFirst();
+
         if (existingReservation.isPresent()) {
 
             return getAndHandleExistingReservation(existingReservation.get(), seats);
 
         }
-                
+
         Reservation newReservation = new Reservation(movieId, userId, sessionId, seats);
         dataStoreContext.insert(newReservation);
         return newReservation;
     }
-    
-    @Override        
+
+    @Override
     public Reservation mergeReservations(Reservation baseReservation, Reservation newReservation) {
         List<Integer> combinedSeats = baseReservation.getReservedSeats();
         combinedSeats.addAll(newReservation.getReservedSeats());
         baseReservation.setReservedSeats(combinedSeats);
-        update(baseReservation.id, baseReservation);
+        update(baseReservation.getId(), baseReservation);
         return baseReservation;
     }
 
@@ -93,13 +93,13 @@ public class ReservationsService extends GenericService<Reservation> implements 
 
         existingSeats.addAll(seats);
         newReservation.setReservedSeats(existingSeats);
-        dataStoreContext.update(newReservation.id, newReservation);
+        dataStoreContext.update(newReservation.getId(), newReservation);
         return newReservation;
     }
 
     private boolean isMatchingReservation(Reservation reservation, long userId, long movieId, long sessionId) {
         return reservation.getUserId() == userId &&
-               reservation.getMovieId() == movieId &&
-               reservation.getSessionId() == sessionId;
+                reservation.getMovieId() == movieId &&
+                reservation.getSessionId() == sessionId;
     }
 }
