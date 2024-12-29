@@ -183,9 +183,9 @@ public class HomePageController {
         int prevIndex = (currentIndex - 1 + movieCount) % movieCount;
         int nextIndex = (currentIndex + 1) % movieCount;
 
-        VBox prevBox = createMovieBox(moviesService.getByIndex(prevIndex));
-        VBox currentBox = createMovieBox(moviesService.getByIndex(currentIndex));
-        VBox nextBox = createMovieBox(moviesService.getByIndex(nextIndex));
+        VBox prevBox = createMovieBox(moviesService.get(prevIndex));
+        VBox currentBox = createMovieBox(moviesService.get(currentIndex));
+        VBox nextBox = createMovieBox(moviesService.get(nextIndex));
 
         Button button1 = createNavigationButton("<", -1);
         Button button2 = createNavigationButton(">", +1);

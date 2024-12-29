@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class DataStoreContext<T extends BaseModel>{
+public class DataStoreContext<T extends BaseModel> {
     private final String fileLocation = System.getProperty("user.dir").concat("/src/main/resources/data/");
     private final String json = ".json";
     private final String storeFilePath;
@@ -22,8 +22,8 @@ public class DataStoreContext<T extends BaseModel>{
 
     public DataStoreContext(Class<T> type, String storeName) {
         this.storeFilePath = fileLocation.concat(storeName).concat(json);
-        
-        this.type= type;       
+
+        this.type = type;
         this.objectMapper = new ObjectMapper();
         this.items = loadFromFile();
     }
@@ -31,8 +31,8 @@ public class DataStoreContext<T extends BaseModel>{
     public Optional<T> get(long id) {
         return items.stream().filter(x -> x.id == id).findFirst();
     }
-    
-    public T getByIndex(int index) {
+
+    public T get(int index) {
         if (index < 0 || index >= items.size()) {
             return null;
         }
@@ -57,9 +57,9 @@ public class DataStoreContext<T extends BaseModel>{
         if (!existedItem.isPresent()) {
             return false;
         }
-    
+
         int index = items.indexOf(existedItem.get());
-        
+
         items.set(index, item);
         return trySaveToFile();
     }
@@ -70,9 +70,9 @@ public class DataStoreContext<T extends BaseModel>{
         if (existedItem.isPresent()) {
             return false;
         }
-    
+
         int index = items.indexOf(existedItem.get());
-        
+
         items.remove(index);
         return trySaveToFile();
     }
