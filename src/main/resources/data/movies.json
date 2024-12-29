@@ -7,7 +7,7 @@
     "duration": 121,
     "imdbRating": 8.6,
     "ticketPrice": 33,
-    "image": "kung-fu-panda-1.jpg"
+    "image": "kung-fu-panda-1-cover.jpg"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "duration": 147,
     "imdbRating": 7.9,
     "ticketPrice": 62,
-    "image": "beast-games.jpg"
+    "image": "beast-games-cover.jpg"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "duration": 116,
     "imdbRating": 6.4,
     "ticketPrice": 65,
-    "image": "Your-Lie-In-April.jpg"
+    "image": "Your-Lie-In-April-cover.jpg"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "duration": 121,
     "imdbRating": 8.6,
     "ticketPrice": 33,
-    "image": "The-Little-Prince.jpg"
+    "image": "The-Little-Prince-cover.jpg"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "duration": 147,
     "imdbRating": 7.9,
     "ticketPrice": 62,
-    "image": "The-Bigbang-Theory.jpg"
+    "image": "The-Bigbang-Theory-cover.jpg"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "duration": 116,
     "imdbRating": 6.4,
     "ticketPrice": 65,
-    "image": "Spiderman-Accross-the-Spider-Verse.jpg"
+    "image": "Spiderman-Accross-the-Spider-Verse-cover.jpg"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "duration": 121,
     "imdbRating": 8.6,
     "ticketPrice": 33,
-    "image": "Spider-Man-Into-The-Spider-Verse.jpg"
+    "image": "Spider-Man-Into-The-Spider-Verse-cover.jpg"
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "duration": 147,
     "imdbRating": 7.9,
     "ticketPrice": 62,
-    "image": "Pasific-Rim.jpg"
+    "image": "Pasific-Rim-cover.jpg"
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "duration": 116,
     "imdbRating": 6.4,
     "ticketPrice": 65,
-    "image": "Sing-Street.jpg"
+    "image": "Sing-Street-cover.jpg"
   },
   {
     "id": 10,
@@ -97,6 +97,6 @@
     "duration": 121,
     "imdbRating": 8.6,
     "ticketPrice": 33,
-    "image": "Shaolin-soccer.jpg"
+    "image": "Shaolin-soccer-cover.jpg"
   }
 ]

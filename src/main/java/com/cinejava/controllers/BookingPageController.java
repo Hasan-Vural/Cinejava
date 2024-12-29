@@ -1,15 +1,20 @@
 package com.cinejava.controllers;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 import com.cinejava.Main;
+import com.cinejava.models.Reservation;
+import com.cinejava.services.implementations.ReservationsService;
+import com.cinejava.singletons.MovieInstanceSingleton;
 import com.cinejava.singletons.ReservationInstanceSingleton;
 import com.jfoenix.controls.JFXButton;
 
@@ -20,6 +25,9 @@ public class BookingPageController {
 
     @FXML
     private JFXButton backButton;
+
+    @FXML
+    private JFXButton completeReservationButton;
 
     // Seçili koltukları takip etmek için bir Set
     private final Set<Integer> selectedSeats = new HashSet<>();
@@ -39,7 +47,8 @@ public class BookingPageController {
 
         for (int row = 0; row < rows; row++) {
             for (int col = 0; col < cols; col++) {
-                Pane seat = createSeat(seatId, startX + col * (seatSize + spacing), startY + row * (seatSize + spacing), reservedSeats.contains(seatId));
+                Pane seat = createSeat(seatId, startX + col * (seatSize + spacing), startY + row * (seatSize + spacing),
+                        reservedSeats.contains(seatId));
                 seatPane.getChildren().add(seat);
                 seatId++;
             }
@@ -86,9 +95,39 @@ public class BookingPageController {
     @FXML
     private void handleBackButtonClick() {
         try {
-            Main.setRoot("MoviePage.fxml");          
+            Main.setRoot("MoviePage.fxml");
         } catch (Exception e) {
             // TODO: handle exception
+        }
+    }
+
+    @FXML
+    private void handleCompleteReservation() {
+        double moviePrice = MovieInstanceSingleton.getInstance().getMovie().getTicketPrice();
+
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Rezervasyon Onayı");
+        alert.setHeaderText("Rezervasyonu Tamamlamak Üzeresiniz");
+        alert.setContentText("Rezervasyonu tamamlamak istediğinize emin misiniz?\nToplam ücret:"
+                + selectedSeats.size() * moviePrice);
+
+        // Kullanıcı onayı
+        if (alert.showAndWait().get().getButtonData().isDefaultButton()) {
+            try {
+                ReservationsService reservationsService = new ReservationsService();
+                Reservation reservation = ReservationInstanceSingleton.getInstance().getReservation();
+                reservationsService.insert(new Reservation(reservation.getMovieId(), reservation.getUserId(),
+                        reservation.getSessionId(), new ArrayList<>(selectedSeats)));
+
+                Alert alert2 = new Alert(Alert.AlertType.INFORMATION);
+                alert2.setTitle("İşlem Başarılı");
+                alert2.setHeaderText("Rezervasyonunuz başarıyla tamamlandı!");
+                alert2.showAndWait();
+                Main.setRoot("HomePage.fxml"); // HomePage.fxml'e dön
+            } catch (Exception e) {
+                e.printStackTrace();
+                System.out.println(e);
+            }
         }
     }
 }

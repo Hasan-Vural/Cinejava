@@ -10,14 +10,13 @@ import com.cinejava.infrastructure.AuthSingleton;
 import com.cinejava.models.User;
 import com.cinejava.services.interfaces.IUsersService;
 
-public class UsersService extends GenericService<User> implements IUsersService{
+public class UsersService extends GenericService<User> implements IUsersService {
     public UsersService() {
         super(User.class, DataStoreConstants.USER_STORE_NAME);
     }
 
     @Override
-    public boolean login(String userName, String password)
-    {
+    public boolean login(String userName, String password) {
         Optional<User> signingUser = findUserByCredentials(userName, password);
 
         if (!signingUser.isPresent()) {
@@ -29,12 +28,11 @@ public class UsersService extends GenericService<User> implements IUsersService{
     }
 
     @Override
-    public String register(String userName, String password)
-    {
+    public String register(String userName, String firstName, String lastName, String password) {
         try {
             validateRegisterRequest(userName, password);
-    
-            User newUser = new User(userName, CryptographyHelper.encrypt(password), UserRole.USER);
+
+            User newUser = new User(userName, firstName, lastName, CryptographyHelper.encrypt(password), UserRole.USER);
 
             dataStoreContext.insert(newUser);
 
@@ -48,16 +46,16 @@ public class UsersService extends GenericService<User> implements IUsersService{
 
     private Optional<User> findUserByCredentials(String userName, String password) {
         return dataStoreContext.getAll()
-            .stream()
-            .filter(user -> user.getUsername().equals(userName) &&
-                            isPasswordValid(password, user.getPassword()))
-            .findFirst();
+                .stream()
+                .filter(user -> user.getUsername().equals(userName) &&
+                        isPasswordValid(password, user.getPassword()))
+                .findFirst();
     }
-    
+
     private boolean isPasswordValid(String plainPassword, String encryptedPassword) {
         try {
             String decryptedPassword = CryptographyHelper.decrypt(encryptedPassword);
-            return decryptedPassword.equals(plainPassword);      
+            return decryptedPassword.equals(plainPassword);
         } catch (Exception e) {
             return false;
         }

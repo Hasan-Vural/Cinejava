@@ -8,8 +8,8 @@ repositories {
 }
 
 dependencies {
-    implementation "org.openjfx:javafx-controls:21"
-    implementation "org.openjfx:javafx-fxml:21"
+    implementation "org.openjfx:javafx-controls:22"
+    implementation "org.openjfx:javafx-fxml:22"
 
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
     implementation 'com.fasterxml.jackson.core:jackson-core:2.15.2'

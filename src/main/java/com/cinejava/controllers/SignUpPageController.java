@@ -21,6 +21,10 @@ public class SignUpPageController {
     @FXML
     private TextField usernameField;
     @FXML
+    private TextField firstnameField;
+    @FXML
+    private TextField lastnameField;
+    @FXML
     private PasswordField passwordField;
     @FXML
     private PasswordField confirmPasswordField;
@@ -36,12 +40,11 @@ public class SignUpPageController {
         String imagePath = getClass().getResource("/images/logo.jpg").toExternalForm();
 
         BackgroundImage backgroundImage = new BackgroundImage(
-            new javafx.scene.image.Image(imagePath),
-            BackgroundRepeat.NO_REPEAT,
-            BackgroundRepeat.NO_REPEAT,
-            BackgroundPosition.DEFAULT,
-            BackgroundSize.DEFAULT
-        );
+                new javafx.scene.image.Image(imagePath),
+                BackgroundRepeat.NO_REPEAT,
+                BackgroundRepeat.NO_REPEAT,
+                BackgroundPosition.DEFAULT,
+                BackgroundSize.DEFAULT);
 
         pane.setBackground(new Background(backgroundImage));
     }
@@ -49,6 +52,8 @@ public class SignUpPageController {
     @FXML
     protected void onSignUpButtonClick() {
         String username = usernameField.getText();
+        String firstname = firstnameField.getText();
+        String lastname = lastnameField.getText();
         String password = passwordField.getText();
         String confirmPassword = confirmPasswordField.getText();
 
@@ -56,8 +61,8 @@ public class SignUpPageController {
             alertForPasswordMismatch();
         }
 
-        else{
-            String message = usersService.register(username, password);
+        else {
+            String message = usersService.register(username, firstname, lastname, password);
 
             if (message.equals("Kayit basarili!")) {
                 alertForSignUpSuccess();
@@ -65,10 +70,10 @@ public class SignUpPageController {
                     Main.setRoot("HomePage.fxml");
                 } catch (Exception e) {
                     e.printStackTrace();
-                }              
+                }
             }
 
-            else{
+            else {
                 alertForSignUpFailure(message);
             }
         }
@@ -83,21 +88,21 @@ public class SignUpPageController {
         }
     }
 
-    private void alertForPasswordMismatch(){
+    private void alertForPasswordMismatch() {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle("Hatalı Giriş");
         alert.setContentText("Girdiğiniz şifreler aynı olmalıdır!");
         alert.showAndWait();
     }
 
-    private void alertForSignUpFailure(String message){
+    private void alertForSignUpFailure(String message) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle("Hatalı Giriş");
         alert.setContentText(message);
         alert.showAndWait();
     }
 
-    private void alertForSignUpSuccess(){
+    private void alertForSignUpSuccess() {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Kayıt Başarılı");
         alert.setContentText("Başarı ile kayıt oldunuz!");

@@ -11,13 +11,12 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml" fx:controller="com.cinejava.controllers.HomePageController">
    <top>
-      <HBox prefHeight="5.0" prefWidth="600.0"  BorderPane.alignment="CENTER" style="-fx-background-color:rgb(74, 77, 80);">
+      <HBox prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER" style="-fx-background-color:rgb(74, 77, 80);">
          <children>
-            <TextField prefHeight="55.0" prefWidth="150.0" translateX="350.0" />
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button" translateX="350.0" />
-            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateX="350.0">
+            <!-- Profil resmi, sağa hizalı -->
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#handleProfileClick" HBox.hgrow="ALWAYS">
                <image>
-                  <Image url="@../Downloads/pngtree-user-profile-button-for-web-and-mobile-design-vector-png-image_41767880.jpg" />
+                  <Image url="@/images/profile.jpg" />
                </image>
             </ImageView>
          </children>

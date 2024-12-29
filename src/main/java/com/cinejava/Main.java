@@ -4,8 +4,6 @@ import javafx.fxml.FXMLLoader;
 
 import java.net.URL;
 
-import javax.imageio.ImageIO;
-
 import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -17,25 +15,25 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        URL url = getClass().getClassLoader().getResource(fxmlPath.concat("HomePage.fxml"));
+        URL url = getClass().getClassLoader().getResource(fxmlPath.concat("LoginPage.fxml"));
 
         FXMLLoader loader = new FXMLLoader(url);
         Parent mainCallWindowFXML = loader.load();
-        
-        scene = new Scene (mainCallWindowFXML, 1300, 700);
+
+        scene = new Scene(mainCallWindowFXML, 1300, 700);
 
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.setTitle("CineJava");
-        primaryStage.show(); 
+        primaryStage.show();
     }
 
     public static void setRoot(String fxmlFile) throws Exception {
-        try{
+        try {
             URL url = Main.class.getClassLoader().getResource(fxmlPath.concat(fxmlFile));
             FXMLLoader loader = new FXMLLoader(url);
             Parent root = loader.load();
-            
+
             scene.setRoot(root);
         }
 

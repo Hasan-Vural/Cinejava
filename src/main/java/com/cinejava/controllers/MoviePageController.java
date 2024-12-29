@@ -12,9 +12,11 @@ import com.cinejava.singletons.ReservationInstanceSingleton;
 import com.jfoenix.controls.JFXButton;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
@@ -40,16 +42,18 @@ public class MoviePageController {
     private Label movieSynopsis;
 
     @FXML
-    private JFXButton backButton;
+    private Label movieImdbRating;
 
     @FXML
-    private Label movieImdbRating;
-    
+    private Label moviePrice;
+
     private long movieId;
 
+    @FXML
+    private Button testb;
 
     @FXML
-    public void initialize(){
+    public void initialize() {
         initializeMovie();
         initializeTabPane();
     }
@@ -57,17 +61,22 @@ public class MoviePageController {
     private void initializeMovie() {
         Movie movie = MovieInstanceSingleton.getInstance().getMovie();
         movieId = movie.getId();
+        Image image = new Image(getClass().getResource("/images/movies/".concat(movie.getImage())).toExternalForm());
+        movieImage.setImage(image);
         movieName.setText(movie.getName());
         movieGenres.setText(movie.getGenres().stream().collect(Collectors.joining(", ")));
         movieSynopsis.setText(movie.getSynopsis());
         movieImdbRating.setText(Double.toString(movie.getImdbRating()));
+        moviePrice.setText(movie.getTicketPrice() + "$");
+
+        testb.setOnAction(e -> handleBackButtonClick());
     }
 
     private void initializeTabPane() {
         applyTabPaneStyles();
 
-        String[] dates = {"1 Ocak", "2 Ocak", "3 Ocak", "4 Ocak", "5 Ocak"};
-        String[] times = {"12:00", "14:30", "17:00", "19:30", "21:00"};
+        String[] dates = { "1 Ocak", "2 Ocak", "3 Ocak", "4 Ocak", "5 Ocak" };
+        String[] times = { "12:00", "14:30", "17:00", "19:30", "21:00" };
         int idCounter = 0;
 
         for (String date : dates) {
@@ -89,32 +98,30 @@ public class MoviePageController {
 
     private void applyTabPaneStyles() {
         tabPane.setStyle(
-            "-fx-background-color: #00A8A8; " +
-            "-fx-tab-min-width: 150; " +
-            "-fx-tab-max-width: 200; "
-        );
+                "-fx-background-color: #00A8A8; " +
+                        "-fx-tab-min-width: 150; " +
+                        "-fx-tab-max-width: 200; ");
 
         tabPane.getStylesheets().add("data:text/css," +
-            ".tab-pane .tab-header-area { " +
-            "  -fx-background-color: #007575; " +
-            "} " +
-            ".tab-pane .tab:selected { " +
-            "  -fx-background-color: #00A8A8; " +
-            "  -fx-text-fill: white; " +
-            "  -fx-font-size: 16px; " +
-            "  -fx-font-weight: bold; " +
-            "  -fx-text-transform: uppercase; " +
-            "} " +
-            ".tab-pane .tab { " +
-            "  -fx-background-color: #005050; " +
-            "  -fx-text-fill: #ffffff; " +
-            "  -fx-font-size: 14px; " +
-            "  -fx-text-transform: uppercase; " +
-            "} " +
-            ".tab-pane .tab:hover { " +
-            "  -fx-background-color: #008080; " +
-            "} "
-        );
+                ".tab-pane .tab-header-area { " +
+                "  -fx-background-color: #007575; " +
+                "} " +
+                ".tab-pane .tab:selected { " +
+                "  -fx-background-color: #00A8A8; " +
+                "  -fx-text-fill: white; " +
+                "  -fx-font-size: 16px; " +
+                "  -fx-font-weight: bold; " +
+                "  -fx-text-transform: uppercase; " +
+                "} " +
+                ".tab-pane .tab { " +
+                "  -fx-background-color: #005050; " +
+                "  -fx-text-fill: #ffffff; " +
+                "  -fx-font-size: 14px; " +
+                "  -fx-text-transform: uppercase; " +
+                "} " +
+                ".tab-pane .tab:hover { " +
+                "  -fx-background-color: #008080; " +
+                "} ");
     }
 
     private Pane createTimePane(String time, int index) {
@@ -137,7 +144,7 @@ public class MoviePageController {
 
         ticketButton.setOnMouseClicked(event -> handleTicketClick(index));
 
-        timePane.getChildren().addAll(timeText, ticketButton); 
+        timePane.getChildren().addAll(timeText, ticketButton);
         return timePane;
     }
 
@@ -151,7 +158,8 @@ public class MoviePageController {
             IReservationsService reservationsService = new ReservationsService();
             reservation.setReservedSeats(reservationsService.getReservedSeats(movieId, index));
 
-            ReservationInstanceSingleton.getInstance().setReservation(reservation);;
+            ReservationInstanceSingleton.getInstance().setReservation(reservation);
+            ;
             Main.setRoot("BookingPage.fxml");
         } catch (Exception e) {
             // TODO: handle exception
@@ -161,9 +169,10 @@ public class MoviePageController {
     @FXML
     private void handleBackButtonClick() {
         try {
-            Main.setRoot("HomePage.fxml");          
+            System.out.println("tesst");
+            Main.setRoot("HomePage.fxml"); // HomePage.fxml'e geri dön
         } catch (Exception e) {
-            // TODO: handle exception
+            e.printStackTrace();
         }
     }
 }
