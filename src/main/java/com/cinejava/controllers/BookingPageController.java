@@ -7,8 +7,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 
 import com.cinejava.services.implementations.ReservationsService;
-import com.cinejava.models.Reservation;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
