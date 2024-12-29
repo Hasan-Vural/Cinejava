@@ -14,6 +14,13 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: #1d3557; -fx-border-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cinejava.controllers.MoviePageController">
    <children>
+
+     <JFXButton fx:id="backButton" layoutX="10.0" layoutY="10.0" text="Geri" onAction="#handleBackButtonClick" style="-fx-background-color: #FF6F00; -fx-text-fill: white; -fx-font-size: 16px; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+
       <AnchorPane fx:id="moviePane" prefHeight="700.0" prefWidth="387.0">
          <children>
             <Pane layoutX="61.0" layoutY="85.0" prefHeight="265.0" prefWidth="265.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 5;">
@@ -23,21 +30,21 @@
                   </ImageView>
                </children>
             </Pane>
-            <VBox layoutX="59.0" layoutY="380.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="293.0" prefWidth="265.0" style="-fx-background-color: #27436B;">
+            <VBox layoutX="59.0" layoutY="380.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="265.0" style="-fx-background-color: #27436B;">
                <children>
                   <AnchorPane prefHeight="299.0" prefWidth="265.0">
                      <children>
-                        <Label fx:id="movieName" layoutX="2.0" layoutY="41.0">
+                        <Label fx:id="movieName" layoutX="2.0">
                            <font>
                               <Font name="Berlin Sans FB" size="36.0" />
                            </font>
                         </Label>
-                        <Label fx:id="movieGenres" layoutX="2.0" layoutY="82.0">
+                        <Label fx:id="movieGenres" layoutX="2.0" layoutY="41.0">
                            <font>
                               <Font name="Berlin Sans FB" size="36.0" />
                            </font>
                         </Label>
-                        <Label fx:id="movieSynopsis" layoutX="14.0" layoutY="103.0">
+                        <Label fx:id="movieSynopsis" layoutX="14.0" layoutY="82.0">
                            <font>
                               <Font name="UniSans-Light" size="18.0" />
                            </font>
