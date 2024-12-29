@@ -17,7 +17,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        URL url = getClass().getClassLoader().getResource(fxmlPath.concat("BookingPage.fxml"));
+        URL url = getClass().getClassLoader().getResource(fxmlPath.concat("HomePage.fxml"));
 
         FXMLLoader loader = new FXMLLoader(url);
         Parent mainCallWindowFXML = loader.load();

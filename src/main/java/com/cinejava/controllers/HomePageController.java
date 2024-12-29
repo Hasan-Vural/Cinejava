@@ -1,14 +1,20 @@
 package com.cinejava.controllers;
 
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
+import com.cinejava.Main;
 import com.cinejava.models.Movie;
 import com.cinejava.services.implementations.MoviesService;
 import com.cinejava.services.interfaces.IMoviesService;
+import com.cinejava.singletons.MovieInstanceSingleton;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -144,6 +150,13 @@ public class HomePageController {
         reserveButton.setPrefHeight(75);
         reserveButton.setOnMouseEntered(event -> reserveButton.setCursor(javafx.scene.Cursor.HAND));
         reserveButton.setOnMouseExited(event -> reserveButton.setCursor(javafx.scene.Cursor.DEFAULT));
+
+        reserveButton.getProperties().put("movieId", movieId);
+
+        reserveButton.setOnMouseClicked(event -> 
+            onMovieDetailButtonClick((long) reserveButton.getProperties().get("movieId"))
+        );
+
         return reserveButton;
     }
 
@@ -183,5 +196,19 @@ public class HomePageController {
 
         movieSlider.getChildren().clear();
         movieSlider.getChildren().addAll(button1, prevBox, currentBox, nextBox, button2);
+    }
+
+    @FXML
+    private void onMovieDetailButtonClick(long movieId) {
+        try {
+
+            Optional<Movie> movie = moviesService.get(movieId);
+
+            MovieInstanceSingleton.getInstance().setMovie(movie.get());
+            
+            Main.setRoot("MoviePage.fxml");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
