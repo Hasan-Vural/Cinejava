@@ -2,8 +2,13 @@ package com.cinejava.controllers;
 
 import java.util.stream.Collectors;
 
+import com.cinejava.Main;
 import com.cinejava.models.Movie;
+import com.cinejava.models.Reservation;
+import com.cinejava.services.implementations.ReservationsService;
+import com.cinejava.services.interfaces.IReservationsService;
 import com.cinejava.singletons.MovieInstanceSingleton;
+import com.cinejava.singletons.ReservationInstanceSingleton;
 import com.jfoenix.controls.JFXButton;
 
 import javafx.fxml.FXML;
@@ -35,25 +40,27 @@ public class MoviePageController {
     private Label movieSynopsis;
 
     @FXML
+    private JFXButton backButton;
+
+    @FXML
     private Label movieImdbRating;
+    
+    private long movieId;
 
 
     @FXML
     public void initialize(){
         initializeMovie();
-
         initializeTabPane();
     }
 
     private void initializeMovie() {
         Movie movie = MovieInstanceSingleton.getInstance().getMovie();
-
+        movieId = movie.getId();
         movieName.setText(movie.getName());
         movieGenres.setText(movie.getGenres().stream().collect(Collectors.joining(", ")));
         movieSynopsis.setText(movie.getSynopsis());
         movieImdbRating.setText(Double.toString(movie.getImdbRating()));
-
-        moviePane.getChildren().add(new Label(movie.getName()));
     }
 
     private void initializeTabPane() {
@@ -135,6 +142,28 @@ public class MoviePageController {
     }
 
     private void handleTicketClick(int index) {
-        System.out.println("Bilet Al tıklandı. Seans ID: " + index);
+        try {
+            Reservation reservation = new Reservation();
+            reservation.setMovieId(movieId);
+            reservation.setSessionId(index);
+            reservation.setUserId(1);
+
+            IReservationsService reservationsService = new ReservationsService();
+            reservation.setReservedSeats(reservationsService.getReservedSeats(movieId, index));
+
+            ReservationInstanceSingleton.getInstance().setReservation(reservation);;
+            Main.setRoot("BookingPage.fxml");
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+    }
+
+    @FXML
+    private void handleBackButtonClick() {
+        try {
+            Main.setRoot("HomePage.fxml");          
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
     }
 }

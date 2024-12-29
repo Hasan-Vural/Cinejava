@@ -8,6 +8,7 @@ public interface IReservationsService extends IGenericService<Reservation> {
     List<Reservation> getReservationsByUserId(long userId);
     List<Reservation> getReservationsByMovieId(long movieId);
     List<Reservation> getReservationsBySessionId(long sessionId);
+    List<Integer> getReservedSeats(long movieId, long sessionId);
     Reservation createReservation(long userId, long movieId, long sessionId, List<Integer> seats);
     Reservation mergeReservations(Reservation baseReservation, Reservation newReservation);
     boolean cancelReservation(long reservationId);
