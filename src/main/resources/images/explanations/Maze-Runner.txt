@@ -1,0 +1,11 @@
+Title: Maze Runner
+
+Description: The story is set in a distant future, where a group of teens are mysteriously teleported into a giant, stone maze. Not only has their memory been cleared, but they also have no indication as to why they have ended up in this position and what means they must take to escape.
+
+Type: Movie
+
+Category: Sci-fi
+
+background-path: medias\images\\backgrounds\Maze-Runner-bg.png                 backgrounds kısmında \b yi escape seq zannediyor onun için \\backgrounds yaptık.
+
+cover-path: medias\images\covers\Maze-Runner-cover.png

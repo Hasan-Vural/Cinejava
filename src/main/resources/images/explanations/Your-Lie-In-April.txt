@@ -1,0 +1,11 @@
+Title: Your Lie in April
+
+Description: I met this girl under full-bloomed cherry blossoms, and my fate has begun to change 🌸
+
+Type: Show
+
+Category: Animation
+
+background-path: medias\images\\backgrounds\Your-Lie-In-April-bg.png                 backgrounds kısmında \b yi escape seq zannediyor onun için \\backgrounds yaptık.
+
+cover-path: medias\images\covers\Your-Lie-In-April-cover.png

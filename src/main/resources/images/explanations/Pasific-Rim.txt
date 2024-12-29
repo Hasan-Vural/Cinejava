@@ -1,0 +1,11 @@
+Title: Pasific Rim
+
+Description: As a war between humankind and monstrous sea creatures wages on, a former pilot and a trainee are paired up to drive a seemingly obsolete special weapon in a desperate effort to save the world from the apocalypse.
+
+Type: Movie
+
+Category: Sci-fi
+
+background-path: medias\images\\backgrounds\Pasific-Rim-bg.png                 backgrounds kısmında \b yi escape seq zannediyor onun için \\backgrounds yaptık.
+
+cover-path: medias\images\covers\Pasific-Rim-cover.png

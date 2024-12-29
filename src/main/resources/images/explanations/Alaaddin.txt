@@ -1,0 +1,11 @@
+Title: Alaaddin
+
+Description: This “Aladdin” is still the funny-sentimental-inspirational story of a poor “street rat” who comes into possession of a magic lamp and a magic carpet, summons a big blue genie, and embarks on a scheme to win the heart of a princess and stop an evil vizier from stealing the kingdom away from the heroine's dad.
+
+Type: Movie
+
+Category: Fantasy/Comedy
+
+background-path: medias\images\\backgrounds\Alaaddin-bg.png                 backgrounds kısmında \b yi escape seq zannediyor onun için \\backgrounds yaptık.
+
+cover-path: medias\images\covers\Alaaddin-cover.png

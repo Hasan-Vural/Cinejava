@@ -1,0 +1,11 @@
+Title: The Big Bang Theory
+
+Description: University physicists Leonard and Sheldon know whether to use an integral or a differential to solve the area under a curve. But they don't have a clue about girls. Or dating. Or clothes. Or parties. Or having fun. Or, basically, life. So when a pretty blonde named Penny moves in the apartment across the hall, the guys decide to get an education outside of the classroom.
+
+Type: Show
+
+Category: Comedy
+
+background-path: medias\images\\backgrounds\The-Bigbang-Theory-bg.png                 backgrounds kısmında \b yi escape seq zannediyor onun için \\backgrounds yaptık.
+
+cover-path: medias\images\covers\The-Bigbang-Theory-cover.png

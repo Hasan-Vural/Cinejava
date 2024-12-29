@@ -1,0 +1,11 @@
+Title: Spider-Man: Across The Spider-Verse
+
+Description: Miles Morales returns for the next chapter of this Oscar®-winning saga, where he must redefine what it means to be a hero after finding himself pitted against a team of Spider-People charged with protecting the Multiverse's very existence.
+
+Type: Movie
+
+Category: Animation
+
+background-path: medias\images\\backgrounds\Spiderman-Accross-the-Spider-Verse-bg.png                 backgrounds kısmında \b yi escape seq zannediyor onun için \\backgrounds yaptık.
+
+cover-path: medias\images\covers\SpiderMan-Accross-the-Spider-Verse-cover.png

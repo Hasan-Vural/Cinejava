@@ -1,0 +1,11 @@
+Title: Shaolin Soccer
+
+Description: A young Shaolin follower reunites with his discouraged brothers to form a soccer team using their martial art skills to their advantage.
+
+Type: Movie
+
+Category: Comedy / Belgesel
+
+background-path: medias\images\\backgrounds\Shaolin-soccer-bg.png                 backgrounds kısmında \b yi escape seq zannediyor onun için \\backgrounds yaptık.
+
+cover-path: medias\images\covers\Shaolin-soccer-cover.png

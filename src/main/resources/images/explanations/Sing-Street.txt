@@ -1,0 +1,10 @@
+Title: Sing Street
+
+Description: A young lad notices a beautiful girl who begins to occupy his thoughts. While struggling with poverty, personal relationships and life's woes, he starts a band, hoping to catch her attention.
+Type: Movie
+
+Category: Comedy
+
+background-path: medias\images\\backgrounds\Sing-Street-bg.png                 backgrounds kısmında \b yi escape seq zannediyor onun için \\backgrounds yaptık.
+
+cover-path: medias\images\covers\Sing-Street-cover.png

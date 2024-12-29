@@ -1,0 +1,11 @@
+Title: The Little Prince
+
+Description: A little girl lives in a very grown-up world with her mother, who tries to prepare her for it. Her neighbor, the Aviator, introduces the girl to an extraordinary world where anything is possible, the world of the Little Prince.
+
+Type: Movie
+
+Category: Animation
+
+background-path: medias\images\\backgrounds\The-Little-Prince-bg.png                 backgrounds kısmında \b yi escape seq zannediyor onun için \\backgrounds yaptık.
+
+cover-path: medias\images\covers\The-Little-Prince-cover.png

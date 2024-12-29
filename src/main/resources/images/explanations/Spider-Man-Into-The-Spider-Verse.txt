@@ -1,0 +1,11 @@
+Title: Spider-Man: Into The Spider-Verse
+
+Description: “Spider-Man: Into the Spider-Verse” introduces Brooklyn teen Miles Morales, and the limitless possibilities of the Spider-Verse, where more than one can wear the mask.
+
+Type: Movie
+
+Category: Animation
+
+background-path: medias\images\\backgrounds\Spider-Man-Into-The-Spider-Verse-bg.png                 backgrounds kısmında \b yi escape seq zannediyor onun için \\backgrounds yaptık.
+
+cover-path: medias\images\covers\Spider-Man-Into-The-Spider-Verse-cover.png

@@ -1,0 +1,11 @@
+Title: Beast Games
+
+Description: I gathered 1,000 people to fight for $5,000,000, the LARGEST cash prize in TV history! We’re also giving away a private island, Lamborghinis, and millions more in cash throughout the competition! Go watch to see the greatest show ever made!
+
+Type: Show
+
+Category: Bilim Kurgu
+
+background-path: medias\images\\backgrounds\beast-games-bg.png                 backgrounds kısmında \b yi escape seq zannediyor onun için \\backgrounds yaptık.
+
+cover-path: medias\images\covers\beast-games-cover.png

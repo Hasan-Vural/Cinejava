@@ -1,0 +1,11 @@
+Title: Bad Boys
+
+Description: Two hip detectives protect a witness to a murder while investigating a case of stolen heroin from the evidence storage room from their police precinct.
+
+Type: Movie
+
+Category: Comedy
+
+background-path: medias\images\\backgrounds\Bad-Boys-bg.png                 backgrounds kısmında \b yi escape seq zannediyor onun için \\backgrounds yaptık.
+
+cover-path: medias\images\covers\Bad-Boys-cover.png

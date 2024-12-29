@@ -1,0 +1,11 @@
+Title: Kung Fu Panda
+
+Description: Po the panda masters the art of kung fu when he is forced to protect his village.
+
+Type: Movie
+
+Category: Animation
+
+background-path: medias\images\\backgrounds\kung-fu-panda-1-bg.png                 backgrounds kısmında \b yi escape seq zannediyor onun için \\backgrounds yaptık.
+
+cover-path: medias\images\covers\kung-fu-panda-1-cover.png

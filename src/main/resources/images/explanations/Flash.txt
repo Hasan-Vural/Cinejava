@@ -1,0 +1,11 @@
+Title: Flash
+
+Description: The series follows Barry Allen, portrayed by Grant Gustin, a crime scene investigator who gains super-human speed, which he uses to fight criminals, along with others who have also gained superhuman abilities.
+
+Type: Show
+
+Category: Sci-Fi
+
+background-path: medias\images\\backgrounds\Flash-bg.png                 backgrounds kısmında \b yi escape seq zannediyor onun için \\backgrounds yaptık.
+
+cover-path: medias\images\covers\Flash-cover.png
