@@ -12,7 +12,6 @@ import com.cinejava.singletons.ReservationInstanceSingleton;
 import com.jfoenix.controls.JFXButton;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
@@ -50,10 +49,12 @@ public class MoviePageController {
     private long movieId;
 
     @FXML
-    private Button testb;
+    private JFXButton backButton;
 
     @FXML
     public void initialize() {
+        backButton.setOnMouseEntered(event -> backButton.setCursor(javafx.scene.Cursor.HAND));
+        backButton.setOnMouseExited(event -> backButton.setCursor(javafx.scene.Cursor.DEFAULT));
         initializeMovie();
         initializeTabPane();
     }
@@ -69,7 +70,7 @@ public class MoviePageController {
         movieImdbRating.setText(Double.toString(movie.getImdbRating()));
         moviePrice.setText(movie.getTicketPrice() + "$");
 
-        testb.setOnAction(e -> handleBackButtonClick());
+        backButton.setOnAction(e -> handleBackButtonClick());
     }
 
     private void initializeTabPane() {
@@ -149,6 +150,7 @@ public class MoviePageController {
     }
 
     private void handleTicketClick(int index) {
+        System.out.println("test");
         try {
             Reservation reservation = new Reservation();
             reservation.setMovieId(movieId);
@@ -175,4 +177,15 @@ public class MoviePageController {
             e.printStackTrace();
         }
     }
+
+    @FXML
+    private void onBackButtonPressed() {
+        System.out.println("Geri butonu tıklandı!"); // Debug için
+        try {
+            Main.setRoot("HomePage.fxml"); // HomePage.fxml'ye yönlendir
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }
