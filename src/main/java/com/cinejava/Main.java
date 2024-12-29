@@ -17,20 +17,13 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        URL url = getClass().getClassLoader().getResource(fxmlPath.concat("LoginPage.fxml"));
+        URL url = getClass().getClassLoader().getResource(fxmlPath.concat("BookingPage.fxml"));
 
         FXMLLoader loader = new FXMLLoader(url);
         Parent mainCallWindowFXML = loader.load();
-<<<<<<< Updated upstream
-
-        scene = new Scene (mainCallWindowFXML, 1300, 700);
-=======
         
-        Image icon = new Image("main/resources/images/icon.png");
-        primaryStage.getIcons().add(icon);
         scene = new Scene (mainCallWindowFXML, 1300, 700);
-        scene.getStylesheets().add(getClass().getResource("main/resources/css/styles.css").toExternalForm());
->>>>>>> Stashed changes
+
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.setTitle("CineJava");
@@ -43,7 +36,7 @@ public class Main extends Application {
             FXMLLoader loader = new FXMLLoader(url);
             Parent root = loader.load();
             
-            scene.setRoot(root, 1300, 700, bgColor="#213555");
+            scene.setRoot(root);
         }
 
         catch (Exception e) {
