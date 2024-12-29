@@ -31,6 +31,13 @@ public class DataStoreContext<T extends BaseModel>{
     public Optional<T> get(long id) {
         return items.stream().filter(x -> x.id == id).findFirst();
     }
+    
+    public T getByIndex(int index) {
+        if (index < 0 || index >= items.size()) {
+            return null;
+        }
+        return items.get(index);
+    }
 
     public List<T> getAll() {
         return new ArrayList<>(items);

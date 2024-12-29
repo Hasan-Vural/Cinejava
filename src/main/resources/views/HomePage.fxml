@@ -11,7 +11,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml" fx:controller="com.cinejava.controllers.HomePageController">
    <top>
-      <HBox prefHeight="5.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <HBox prefHeight="5.0" prefWidth="600.0"  BorderPane.alignment="CENTER" style="-fx-background-color:rgb(74, 77, 80);">
          <children>
             <TextField prefHeight="55.0" prefWidth="150.0" translateX="350.0" />
             <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button" translateX="350.0" />
@@ -28,20 +28,3 @@
       </HBox>
    </center>
 </BorderPane>
-
-<!--
-         <children>
-            <VBox prefHeight="350.0" prefWidth="200.0">
-               <children>
-                  <ImageView fitHeight="300.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Button" />
-               </children>
-            </VBox>
-            <VBox prefHeight="350.0" prefWidth="200.0" translateX="100.0">
-               <children>
-                  <ImageView fitHeight="300.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Button" />
-               </children>
-            </VBox>
-         </children>
--->

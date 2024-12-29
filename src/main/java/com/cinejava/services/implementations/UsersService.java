@@ -6,7 +6,7 @@ import com.cinejava.common.CryptographyHelper;
 import com.cinejava.constants.DataStoreConstants;
 import com.cinejava.enums.UserRole;
 import com.cinejava.exceptions.RegisterException;
-import com.cinejava.infrastructure.AuthSession;
+import com.cinejava.infrastructure.AuthSingleton;
 import com.cinejava.models.User;
 import com.cinejava.services.interfaces.IUsersService;
 
@@ -24,7 +24,7 @@ public class UsersService extends GenericService<User> implements IUsersService{
             return false;
         }
 
-        AuthSession.getInstance().setLoggedInUser(signingUser.get());
+        AuthSingleton.getInstance().setLoggedInUser(signingUser.get());
         return true;
     }
 
@@ -38,7 +38,7 @@ public class UsersService extends GenericService<User> implements IUsersService{
 
             dataStoreContext.insert(newUser);
 
-            AuthSession.getInstance().setLoggedInUser(newUser);
+            AuthSingleton.getInstance().setLoggedInUser(newUser);
 
             return "Kayit basarili!";
         } catch (Exception e) {

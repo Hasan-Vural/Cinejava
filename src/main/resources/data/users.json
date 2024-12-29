@@ -1,14 +1,1 @@
-[
-    {
-        "id": 1,
-        "username": "admin",
-        "password": "admin",
-        "role": "ADMIN"
-    },
-    {
-        "id": 2,
-        "username": "johnny_doe",
-        "password": "hashedPassword123",
-        "role": "USER"
-    }
-]
+[{"id":2600154640336132483,"username":"test","password":"jEnzlPM9U2fm53mKCSiceQ==","role":"USER"}]

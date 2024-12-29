@@ -1,82 +1,202 @@
 [
-    {
-      "id": 1,
-      "name": "Inception",
-      "synopsis": "A skilled thief leads a team into people's dreams to steal secrets.",
-      "genres": ["Sci-Fi", "Action", "Thriller"],
-      "duration": 148,
-      "imdbRating": 8.8,
-      "ticketPrice": 50,
-      "image": "inception.jpg"
-    },
-    {
-      "id": 2,
-      "name": "The Dark Knight",
-      "synopsis": "Batman faces the Joker, a criminal mastermind.",
-      "genres": ["Action", "Crime", "Drama"],
-      "duration": 152,
-      "imdbRating": 9.0,
-      "ticketPrice": 60,
-      "image": "dark_knight.jpg"
-    },
-    {
-      "id": 2,
-      "name": "The Dark Knight",
-      "synopsis": "Batman faces the Joker, a criminal mastermind.",
-      "genres": ["Action", "Crime", "Drama"],
-      "duration": 152,
-      "imdbRating": 9.0,
-      "ticketPrice": 60,
-      "image": "dark_knight.jpg"
-    },
-    {
-      "id": 2,
-      "name": "The Dark Knight",
-      "synopsis": "Batman faces the Joker, a criminal mastermind.",
-      "genres": ["Action", "Crime", "Drama"],
-      "duration": 152,
-      "imdbRating": 9.0,
-      "ticketPrice": 60,
-      "image": "dark_knight.jpg"
-    },
-    {
-      "id": 2,
-      "name": "The Dark Knight",
-      "synopsis": "Batman faces the Joker, a criminal mastermind.",
-      "genres": ["Action", "Crime", "Drama"],
-      "duration": 152,
-      "imdbRating": 9.0,
-      "ticketPrice": 60,
-      "image": "dark_knight.jpg"
-    },
-    {
-      "id": 2,
-      "name": "The Dark Knight",
-      "synopsis": "Batman faces the Joker, a criminal mastermind.",
-      "genres": ["Action", "Crime", "Drama"],
-      "duration": 152,
-      "imdbRating": 9.0,
-      "ticketPrice": 60,
-      "image": "dark_knight.jpg"
-    },
-    {
-      "id": 2,
-      "name": "The Dark Knight",
-      "synopsis": "Batman faces the Joker, a criminal mastermind.",
-      "genres": ["Action", "Crime", "Drama"],
-      "duration": 152,
-      "imdbRating": 9.0,
-      "ticketPrice": 60,
-      "image": "dark_knight.jpg"
-    },
-    {
-      "id": 2,
-      "name": "The Dark Knight",
-      "synopsis": "Batman faces the Joker, a criminal mastermind.",
-      "genres": ["Action", "Crime", "Drama"],
-      "duration": 152,
-      "imdbRating": 9.0,
-      "ticketPrice": 60,
-      "image": "dark_knight.jpg"
-    }
+  {
+    "id": 1,
+    "name": "Pulp Fiction3",
+    "synopsis": "A vigilante fights crime in a corrupt city.",
+    "genres": ["Fantasy", "Sci-Fi"],
+    "duration": 132,
+    "imdbRating": 5.8,
+    "ticketPrice": 54,
+    "image": "image_11.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Pulp Fiction4",
+    "synopsis": "A vigilante fights crime in a corrupt city.",
+    "genres": ["Action"],
+    "duration": 164,
+    "imdbRating": 6.0,
+    "ticketPrice": 78,
+    "image": "image_8.jpg"
+  },
+  {
+    "id": 3,
+    "name": "The Lord of the Rings1",
+    "synopsis": "A hacker discovers a hidden reality behind the world.",
+    "genres": ["Action"],
+    "duration": 163,
+    "imdbRating": 7.2,
+    "ticketPrice": 54,
+    "image": "image_20.jpg"
+  },
+  {
+    "id": 4,
+    "name": "The Lord of the Rings2",
+    "synopsis": "Humans face challenges on a distant alien world.",
+    "genres": ["Horror"],
+    "duration": 160,
+    "imdbRating": 6.7,
+    "ticketPrice": 62,
+    "image": "image_14.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Forrest Gump5",
+    "synopsis": "A skilled thief leads a team into people's dreams to steal secrets.",
+    "genres": ["Drama", "Adventure", "Fantasy"],
+    "duration": 103,
+    "imdbRating": 7.1,
+    "ticketPrice": 86,
+    "image": "image_15.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Forrest Gump6",
+    "synopsis": "A vigilante fights crime in a corrupt city.",
+    "genres": ["Adventure"],
+    "duration": 137,
+    "imdbRating": 5.8,
+    "ticketPrice": 83,
+    "image": "image_20.jpg"
+  },
+  {
+    "id": 7,
+    "name": "The Shawshank Redemption",
+    "synopsis": "A hacker discovers a hidden reality behind the world.",
+    "genres": ["Drama", "Comedy"],
+    "duration": 179,
+    "imdbRating": 7.8,
+    "ticketPrice": 98,
+    "image": "image_14.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Black Panther",
+    "synopsis": "A hacker discovers a hidden reality behind the world.",
+    "genres": ["Mystery", "Horror", "Fantasy"],
+    "duration": 176,
+    "imdbRating": 5.6,
+    "ticketPrice": 66,
+    "image": "image_7.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Inception",
+    "synopsis": "Humans face challenges on a distant alien world.",
+    "genres": ["Comedy"],
+    "duration": 179,
+    "imdbRating": 7.6,
+    "ticketPrice": 32,
+    "image": "image_5.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Inception",
+    "synopsis": "A group of astronauts ventures into a wormhole to save humanity.",
+    "genres": ["Horror", "Fantasy"],
+    "duration": 165,
+    "imdbRating": 8.0,
+    "ticketPrice": 62,
+    "image": "image_11.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Toy Story",
+    "synopsis": "A hacker discovers a hidden reality behind the world.",
+    "genres": ["Comedy", "Action"],
+    "duration": 145,
+    "imdbRating": 5.4,
+    "ticketPrice": 30,
+    "image": "image_12.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Interstellar",
+    "synopsis": "A group of astronauts ventures into a wormhole to save humanity.",
+    "genres": ["Horror", "Mystery", "Comedy"],
+    "duration": 113,
+    "imdbRating": 9.2,
+    "ticketPrice": 96,
+    "image": "image_17.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Gladiator",
+    "synopsis": "A hacker discovers a hidden reality behind the world.",
+    "genres": ["Adventure", "Sci-Fi"],
+    "duration": 138,
+    "imdbRating": 5.6,
+    "ticketPrice": 31,
+    "image": "image_8.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Jurassic Park",
+    "synopsis": "A group of astronauts ventures into a wormhole to save humanity.",
+    "genres": ["Action"],
+    "duration": 143,
+    "imdbRating": 8.3,
+    "ticketPrice": 70,
+    "image": "image_7.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Harry Potter",
+    "synopsis": "A hacker discovers a hidden reality behind the world.",
+    "genres": ["Thriller", "Mystery", "Fantasy"],
+    "duration": 148,
+    "imdbRating": 5.3,
+    "ticketPrice": 68,
+    "image": "image_19.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Iron Man",
+    "synopsis": "A group of astronauts ventures into a wormhole to save humanity.",
+    "genres": ["Mystery", "Sci-Fi"],
+    "duration": 103,
+    "imdbRating": 6.5,
+    "ticketPrice": 99,
+    "image": "image_17.jpg"
+  },
+  {
+    "id": 17,
+    "name": "The Matrix",
+    "synopsis": "Humans face challenges on a distant alien world.",
+    "genres": ["Fantasy", "Sci-Fi", "Action"],
+    "duration": 104,
+    "imdbRating": 9.2,
+    "ticketPrice": 66,
+    "image": "image_9.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Titanic",
+    "synopsis": "A skilled thief leads a team into people's dreams to steal secrets.",
+    "genres": ["Action", "Comedy", "Fantasy"],
+    "duration": 121,
+    "imdbRating": 8.6,
+    "ticketPrice": 33,
+    "image": "image_1.jpg"
+  },
+  {
+    "id": 19,
+    "name": "The Dark Knight",
+    "synopsis": "Humans face challenges on a distant alien world.",
+    "genres": ["Action", "Drama"],
+    "duration": 147,
+    "imdbRating": 7.9,
+    "ticketPrice": 62,
+    "image": "image_11.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Iron Man",
+    "synopsis": "A group of astronauts ventures into a wormhole to save humanity.",
+    "genres": ["Comedy"],
+    "duration": 116,
+    "imdbRating": 6.4,
+    "ticketPrice": 65,
+    "image": "image_11.jpg"
+  }
 ]
